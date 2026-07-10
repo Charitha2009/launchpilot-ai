@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+
+import { APP_NAME, APP_SUBTITLE } from "@/lib/constants";
+
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "LaunchPilot AI",
-  description: "AI-powered landing page quality assurance",
+  title: APP_NAME,
+  description: APP_SUBTITLE,
 };
 
 export default function RootLayout({
