@@ -7,3 +7,5 @@ export const PAGE_WIDTH = "max-w-3xl";
 
 /** Allows title + subtitle without clipping in the sticky shell. */
 export const HEADER_HEIGHT = "min-h-14 py-3";
+
+export const MAX_URL_LENGTH = 2048;

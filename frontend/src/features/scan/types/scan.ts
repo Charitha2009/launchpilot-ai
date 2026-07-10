@@ -1,11 +1,7 @@
-export enum ScanStatus {
-  IDLE = "IDLE",
-  VALIDATING = "VALIDATING",
-  SUBMITTING = "SUBMITTING",
-  PROCESSING = "PROCESSING",
-  SUCCESS = "SUCCESS",
-  ERROR = "ERROR",
-}
+/**
+ * Fine-grained in-flight pipeline stages while status === PROCESSING.
+ * Coarse lifecycle status lives in `./analyze` (ScanStatus).
+ */
 
 export enum ProcessingStage {
   OPENING_BROWSER = "OPENING_BROWSER",
@@ -13,15 +9,3 @@ export enum ProcessingStage {
   CAPTURING_SCREENSHOT = "CAPTURING_SCREENSHOT",
   FINISHING = "FINISHING",
 }
-
-export type ScanRequest = {
-  url: string;
-};
-
-export type ScanResponse = {
-  url: string;
-  status: ScanStatus.SUCCESS;
-  capturedAt: string;
-  viewport: "Desktop";
-  screenshotUrl: string;
-};
