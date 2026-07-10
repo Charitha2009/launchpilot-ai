@@ -1,9 +1,4 @@
-/**
- * useScan — workflow state machine + actions (analyze, reset, retry).
- * TODO: Own ScanStatus / ProcessingStage; call ScanService; no UI markup.
- */
-
+// TODO: Implement scan state machine (ADR-002).
 export function useScan() {
-  // TODO: Implement scan state machine.
   return {};
 }

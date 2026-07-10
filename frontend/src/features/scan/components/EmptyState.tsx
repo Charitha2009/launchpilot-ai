@@ -1,7 +1,3 @@
-/**
- * EmptyState — idle prompt before first scan.
- * TODO: Short instructional placeholder copy.
- */
-export function EmptyState() {
-  return null;
+export default function EmptyState() {
+  return <div>EmptyState</div>;
 }

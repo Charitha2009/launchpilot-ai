@@ -1,7 +1,3 @@
-/**
- * SuccessResult — groups ScanSummary + ScreenshotViewer + ResultActions.
- * TODO: Layout success artifacts only.
- */
-export function SuccessResult() {
-  return null;
+export default function SuccessResult() {
+  return <div>SuccessResult</div>;
 }
